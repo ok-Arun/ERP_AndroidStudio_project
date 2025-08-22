@@ -81,8 +81,12 @@ Role-based Android app for managing students, teachers, departments, semesters, 
 2. Place it at: app/google-services.json
 
  ## 📸 Screenshots  
-
+###App
 ![Login Screen](screenshots/login.png)    ![Login Screen](screenshots/admin_dashboard.png)
 ![Login Screen](screenshots/users.png)    ![Login Screen](screenshots/course_papers.png)
 ![Login Screen](screenshots/view_attendance.png)
 
+###Database
+![Login Screen](screenshots/database/all users.png)    ![Login Screen](screenshots/database/Attendance.png)
+![Login Screen](screenshots/database/email authentication.png)    ![Login Screen](screenshots/database/Marks.png)
+![Login Screen](screenshots/database/paper.png)
