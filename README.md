@@ -93,5 +93,8 @@ EduTrack/
  ├── README.md
  └── .gitignore
 
- 
+ ## 📸 Screenshots  
+
+### 🔐 Login Screen  
+![Login Screen](screenshots/login.png)
 
