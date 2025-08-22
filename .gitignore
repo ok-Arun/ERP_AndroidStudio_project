@@ -1,3 +1,4 @@
+# IntelliJ / Android Studio
 *.iml
 .gradle
 /local.properties
@@ -7,9 +8,24 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+
+# macOS
 .DS_Store
+
+# Build outputs
 /build
 /captures
 .externalNativeBuild
 .cxx
+
+# Local configuration
 local.properties
+
+# Firebase & Google Services
+/google-services.json
+/app/google-services.json
+/firebase-adminsdk.json
+
+# Other sensitive JSON keys (if any)
+# Uncomment if you want to ignore all JSONs (⚠️ may hide resource files)
+# *.json
