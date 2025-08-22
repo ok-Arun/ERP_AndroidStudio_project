@@ -83,7 +83,6 @@ Role-based Android app for managing students, teachers, departments, semesters, 
 ## 📂 Project Structure
 EduTrack/
 ├── app/
-
 │   ├── src/
 
 │   │   ├── main/
