@@ -80,13 +80,15 @@ Role-based Android app for managing students, teachers, departments, semesters, 
 1. Download the `google-services.json` from Firebase after registering the app.  
 2. Place it at: app/google-services.json
 
- ## 📸 Screenshots  
+## 📸 Screenshots  
 ###App
+
 ![Login Screen](screenshots/login.png)    ![Login Screen](screenshots/admin_dashboard.png)
 ![Login Screen](screenshots/users.png)    ![Login Screen](screenshots/course_papers.png)
 ![Login Screen](screenshots/view_attendance.png)
 
 ###Database
-![Login Screen](screenshots/database/all users.png)    ![Login Screen](screenshots/database/Attendance.png)
-![Login Screen](screenshots/database/email authentication.png)    ![Login Screen](screenshots/database/Marks.png)
+
+![Login Screen](screenshots/database/allusers.png)    ![Login Screen](screenshots/database/Attendance.png)
+![Login Screen](screenshots/database/emailauthentication.png)    ![Login Screen](screenshots/database/Marks.png)
 ![Login Screen](screenshots/database/paper.png)
