@@ -19,7 +19,7 @@ Role-based Android app for managing students, teachers, departments, semesters, 
 - [Download](#-download)
 - [Build & Run (Developers)](#-build--run-developers)
 - [Firebase Setup](#-firebase-setup)
-- [Project Structure](#-project-structure)
+- [Screenshots](#-screenshots)
 
 
 ---
@@ -79,25 +79,6 @@ Role-based Android app for managing students, teachers, departments, semesters, 
 ### 3) Download & Add `google-services.json`
 1. Download the `google-services.json` from Firebase after registering the app.  
 2. Place it at: app/google-services.json
-
-## 📂 Project Structure
-EduTrack/
-├── app/
-│   ├── src/
-
-│   │   ├── main/
-│   │   │   ├── java/com/example/finalproject/   # Java source code
-│   │   │   └── res/                            # XML layouts, drawables
-│   ├── build.gradle
-│   └── google-services.json (ignored)
-├── build/                                      # APK output
-├── screenshots/                                # App screenshots
-│   ├── login.png
-│   ├── dashboard.png
-│   └── admin_panel.png
-├── README.md
-└── .gitignore
-
 
  ## 📸 Screenshots  
 
