@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Admin.User.ManageUsersActivity">
+
+    <!-- Search View for User Name -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search users by name" />
+
+    <!-- Invite Teacher Button -->
+    <Button
+        android:id="@+id/inviteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Teacher"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/system_accent1_500"
+        android:textColor="@android:color/white" />
+
+    <!-- Add Admin Button -->
+    <Button
+        android:id="@+id/addAdminButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Admin"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white" />
+
+    <!-- Filter Row: Role and Course horizontally with labels -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:weightSum="4">
+
+        <!-- Role Label -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Role"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Role Spinner -->
+        <Spinner
+            android:id="@+id/roleSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Course Label -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Course"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Course Spinner -->
+        <Spinner
+            android:id="@+id/cidSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- User Count TextView -->
+    <TextView
+        android:id="@+id/userCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Users Found: 0"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- RecyclerView for User List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Department Name Input -->
+    <EditText
+        android:id="@+id/depNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Department Name"
+        android:inputType="text" />
+
+    <!-- Department ID Preview -->
+    <TextView
+        android:id="@+id/depIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dep ID: "
+        android:textSize="16sp" />
+
+    <!-- Teacher Assignment Spinner -->
+    <Spinner
+        android:id="@+id/teacherAssignMainSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Add Department Button -->
+    <Button
+        android:id="@+id/addDepartmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Department" />
+
+    <!-- RecyclerView for displaying departments -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/departmentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

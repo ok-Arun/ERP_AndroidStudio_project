@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance Dashboard"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Summary Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <!-- Total Students -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:id="@+id/totalStudentsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Students"
+                    android:textSize="14sp"
+                    android:textColor="#777777" />
+            </LinearLayout>
+
+            <!-- Avg Attendance -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:id="@+id/averageAttendanceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avg Attendance"
+                    android:textSize="14sp"
+                    android:textColor="#777777" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Button: View All Attendance -->
+        <Button
+            android:id="@+id/viewAllAttendanceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Attendance Records"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Button: Student Attendance Report -->
+        <Button
+            android:id="@+id/viewStudentReportBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Student Attendance Report"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F7F7"
+    tools:context=".AdminActivity">
+
+    <LinearLayout
+        android:id="@+id/dashboardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Welcome Admin Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/welcomeAdminText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Admin"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/adminIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin ID: loading..."
+                android:textSize="14sp"
+                android:textColor="#555555" />
+        </LinearLayout>
+
+        <!-- Dashboard Summary Section -->
+        <LinearLayout
+            android:id="@+id/dashboardSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <!-- Total Users -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/totalUsersCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Users"
+                    android:textSize="14sp"
+                    android:textColor="#777777" />
+            </LinearLayout>
+
+            <!-- Active Users -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/activeUsersCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users"
+                    android:textSize="14sp"
+                    android:textColor="#777777" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Manage Users Button -->
+        <Button
+            android:id="@+id/manageUsersButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Users"
+            android:layout_marginTop="70dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Manage Department Button -->
+        <Button
+            android:id="@+id/manageDepartmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Department"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Manage Course Button -->
+        <Button
+            android:id="@+id/manageCourseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Course"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Manage Attendance Button -->
+        <Button
+            android:id="@+id/manageAttendanceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attendance"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

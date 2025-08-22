@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5"
+    tools:context=".EditProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/marqueeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your request is under processing. Please wait for approval."
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#FF0000"
+            android:background="#FFEB3B"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:visibility="gone"/> <!-- Initially hidden -->
+
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/editProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#003CD4"
+            android:gravity="center" />
+
+
+
+        <!-- Full Name -->
+        <LinearLayout
+            android:id="@+id/fullNameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/editProfileTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Full Name:"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_weight="0.2"/>
+
+            <EditText
+                android:id="@+id/fullNameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:text="Admin"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Phone Number -->
+        <LinearLayout
+            android:id="@+id/phoneNumberLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/fullNameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number:"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_weight="0.05"/>
+
+            <EditText
+                android:id="@+id/phoneNumberInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:text="1234567890"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Address -->
+        <LinearLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumberLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_weight="0.25"
+                />
+
+            <EditText
+                android:id="@+id/addressInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:text="123 Main St"
+                android:layout_marginEnd="20dp"
+                android:padding="12dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Gender -->
+        <LinearLayout
+            android:id="@+id/genderLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/addressLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_weight="0.3"/>
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:entries="@array/gender_options"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Date of Birth -->
+        <LinearLayout
+            android:id="@+id/dobLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/genderLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth:"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_weight="0.15"/>
+
+            <EditText
+                android:id="@+id/dobInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:text="26/04/2001"
+                android:layout_marginEnd="20dp"
+                android:padding="12dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Course Name -->
+        <LinearLayout
+            android:id="@+id/courseNameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/dobLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Name:"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_weight="0.15"/>
+
+            <Spinner
+                android:id="@+id/courseNameSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Semester -->
+        <LinearLayout
+            android:id="@+id/semesterLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/courseNameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semester:"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_weight="0.29"/>
+
+            <EditText
+                android:id="@+id/semesterInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Semester"
+                android:text="1"
+                android:layout_marginEnd="20dp"
+                android:padding="12dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Parent Name -->
+        <LinearLayout
+            android:id="@+id/parentNameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/semesterLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parent's Name:"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_weight="0.13"/>
+
+            <EditText
+                android:id="@+id/parentNameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Parent's Name"
+                android:text="pta nhi"
+                android:layout_marginEnd="20dp"
+                android:padding="12dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            app:layout_constraintTop_toBottomOf="@id/parentNameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:backgroundTint="#57940B"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

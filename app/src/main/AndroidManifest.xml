@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.final3o">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Final3O"
+        tools:targetApi="31">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+
+        <activity android:name=".Registration.RegisterActivity"/>
+        <activity android:name=".Registration.DummyPaymentActivity"/>
+
+
+        <activity android:name=".Admin.PrimaryAdminRegisterActivity"/>
+        <activity android:name=".Admin.AdminDashboardActivity"/>
+        <activity android:name=".Admin.Attendance.AdminAttendanceActivity"/>
+        <activity android:name=".Admin.Course.ManageCoursesActivity"/>
+        <activity android:name=".Admin.Department.ManageDepartmentActivity"/>
+        <activity android:name=".Admin.User.ManageUsersActivity"/>
+
+        <activity android:name=".Teacher.TeacherRegistrationActivity"/>
+        <activity android:name=".Teacher.TeacherDashboardActivity"/>
+        <activity android:name=".Teacher.Attendance.TeacherAttendanceActivity"/>
+        <activity android:name=".Teacher.Grading.GradingActivity"/>
+       <activity android:name=".Teacher.Students.ApprovalActivity"/>
+
+        <activity android:name=".Student.StudentDashboardActivity"/>
+        <activity android:name=".Student.Edit.EditProfileActivity"/>
+        <activity android:name=".Student.Attendance.AttendanceActivity"/>
+        <activity android:name=".Student.Marks.MarksActivity"/>
+
+
+
+    </application>
+
+</manifest>

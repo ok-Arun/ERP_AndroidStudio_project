@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- User's Full Name -->
+    <TextView
+        android:id="@+id/nameText"
+        android:text="Full Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- User's Email -->
+    <TextView
+        android:id="@+id/emailText"
+        android:text="Email"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- User's Role -->
+    <TextView
+        android:id="@+id/roleText"
+        android:text="Role: student"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- User's ID -->
+    <TextView
+        android:id="@+id/idText"
+        android:text="Student ID: bca24-001"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Course (Visible only for students) -->
+    <TextView
+        android:id="@+id/courseText"
+        android:text="Course: BCA"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"/>
+
+
+</LinearLayout>

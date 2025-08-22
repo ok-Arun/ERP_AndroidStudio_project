@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Student Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <!-- Attendance options -->
+    <RadioGroup
+        android:id="@+id/radioGroupAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonPresent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAbsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Absent" />
+    </RadioGroup>
+
+</LinearLayout>

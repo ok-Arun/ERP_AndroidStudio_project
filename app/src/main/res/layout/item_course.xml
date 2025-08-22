@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/courseId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course ID"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semester"
+        android:textSize="14sp" />
+</LinearLayout>

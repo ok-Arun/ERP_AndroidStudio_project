@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:scrollbars="vertical">
+
+    <!-- Department Spinner -->
+    <TextView
+        android:id="@+id/labelDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Department"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Course Spinner (Filtered by Department) -->
+    <TextView
+        android:id="@+id/labelCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Course"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Paper Spinner (Filtered by Course) -->
+    <TextView
+        android:id="@+id/labelPaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Paper"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerPaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Date Selection Button -->
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- TextView to display the selected date -->
+    <TextView
+        android:id="@+id/txtSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Date Selected" />
+
+    <!-- RecyclerView to display Students for Attendance -->
+    <TextView
+        android:id="@+id/labelStudents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Attendance"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <!-- RecyclerView for student list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Attendance"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

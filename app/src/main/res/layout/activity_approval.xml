@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f7f7f7">
+
+    <!-- Header for Page Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Information Change Request"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"/>
+
+    <!-- RecyclerView to Display Requests -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/requestsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

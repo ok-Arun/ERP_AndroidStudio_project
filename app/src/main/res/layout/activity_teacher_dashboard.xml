@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F7F7"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/teacherPanelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Teacher Dashboard Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="16dp"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/teacherDashboardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher Dashboard"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/teacherWelcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Teacher"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/teacherIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher ID: "
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/attendanceManagementButton"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Mark Attendance"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/gradingButton"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Grading/Assessment"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/viewStudentsButton"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="View Students Request"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_button" />
+
+    </LinearLayout>
+</ScrollView>

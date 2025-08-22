@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tv_marks_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marks Overview"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- Student Info -->
+        <TextView
+            android:id="@+id/tv_student_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID: "
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department: "
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course: "
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Select Semester -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Semester:"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- RecyclerView for displaying papers and marks -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_marks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+        <!-- No Data Message -->
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No marks available for selected semester."
+            android:textAlignment="center"
+            android:paddingTop="16dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

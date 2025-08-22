@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentDashboardActivity"
+    android:background="#F5F5F5">
+
+    <!-- Student Name and ID Section -->
+    <LinearLayout
+        android:id="@+id/studcontainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#B794AEE9"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/studentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID: BCA24-001"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Attendance and Marks Section -->
+    <LinearLayout
+        android:id="@+id/attenmarksBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_black"
+        android:padding="20dp"
+        android:gravity="center"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/studcontainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+
+        <!-- Attendance -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/attendancePercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="95%"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/attendanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendance"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Marks -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/marksPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="89%"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/marksLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marks"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Announcements Section -->
+    <TextView
+        android:id="@+id/announcementLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Announcements"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/attenmarksBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/marqueeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Student Dashboard! | Semester Exams start from 10th May. | New courses available!"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:background="#FFC107"
+        android:padding="10dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        app:layout_constraintTop_toBottomOf="@id/announcementLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:id="@+id/buttonSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/marqueeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="32dp">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewAttendanceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Attendance"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/marksButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Marks"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Added Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:backgroundTint="#E53935"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

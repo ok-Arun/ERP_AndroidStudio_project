@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Payment Title -->
+    <TextView
+        android:id="@+id/paymentTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Secure Payment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Card Icon -->
+    <ImageView
+        android:id="@+id/cardIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@android:drawable/ic_secure"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/paymentTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Card Number -->
+    <EditText
+        android:id="@+id/cardNumberEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:maxLength="16"
+        android:backgroundTint="#888888"
+        app:layout_constraintTop_toBottomOf="@id/cardIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Expiry Date and CVV in horizontal layout -->
+    <LinearLayout
+        android:id="@+id/expiryCvvLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cardNumberEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/expiryDateEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="MM/YY"
+            android:inputType="text"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#888888" />
+
+        <EditText
+            android:id="@+id/cvvEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:backgroundTint="#888888" />
+    </LinearLayout>
+
+    <!-- Cardholder Name -->
+    <EditText
+        android:id="@+id/cardHolderNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Cardholder Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#888888"
+        app:layout_constraintTop_toBottomOf="@id/expiryCvvLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Amount Display -->
+    <TextView
+        android:id="@+id/paymentAmountText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Amount: ₹0"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardHolderNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Pay Now Button -->
+    <Button
+        android:id="@+id/payNowButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/paymentAmountText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

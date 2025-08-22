@@ -1,0 +1,36 @@
+<!-- item_paper.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewPaperName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewPaperCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paper Code"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textViewSemester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textViewTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assigned Teacher"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"/>
+</LinearLayout>

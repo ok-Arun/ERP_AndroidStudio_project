@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Course and Papers"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- First row: Paper Name and Code -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/etPaperName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="Paper Name"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/etPaperCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Paper Code"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!-- Second row: Paper Type & Department -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Department" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paper Type" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/etDeptName"
+                android:layout_width="1dp"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+            <Spinner
+                android:id="@+id/spinnerPaperType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!-- Third row: Course & Semester -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Course" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Semester" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/etCourseName"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/spinnerSemester"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <!-- New row: Assign Teacher -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Assign Teacher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:id="@+id/etTeacherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="Select Teacher"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddPaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Paper"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="15dp"/>
+</LinearLayout>
+
