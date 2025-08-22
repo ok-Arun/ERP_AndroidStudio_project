@@ -82,19 +82,27 @@ Role-based Android app for managing students, teachers, departments, semesters, 
 
 ## 📂 Project Structure
 EduTrack/
- ├── app/
- │   ├── src/
- │   │   ├── main/
- │   │   │   ├── java/com/example/finalproject/   # Java source code
- │   │   │   └── res/                             # XML layouts, drawables
- │   ├── build.gradle
- │   └── google-services.json (ignored)
- ├── build/                                       # APK output
- ├── README.md
- └── .gitignore
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/example/finalproject/   # Java source code
+│   │   │   └── res/                            # XML layouts, drawables
+│   ├── build.gradle
+│   └── google-services.json (ignored)
+├── build/                                      # APK output
+├── screenshots/                                # App screenshots
+│   ├── login.png
+│   ├── dashboard.png
+│   └── admin_panel.png
+├── README.md
+└── .gitignore
+
 
  ## 📸 Screenshots  
 
-### 🔐 Login Screen  
 ![Login Screen](screenshots/login.png)
+![Login Screen](screenshots/admin_dashboard.png)
+![Login Screen](screenshots/users.png)
+![Login Screen](screenshots/course_papers.png)
+![Login Screen](screenshots/view_attendance.png)
 
