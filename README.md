@@ -89,6 +89,6 @@ Role-based Android app for managing students, teachers, departments, semesters, 
 
 ###Database
 
-![Login Screen](screenshots/database/allusers.png)    ![Login Screen](screenshots/database/Attendance.png)
-![Login Screen](screenshots/database/emailauthentication.png)    ![Login Screen](screenshots/database/Marks.png)
-![Login Screen](screenshots/database/paper.png)
+![All Users](screenshots/database/allusers.png)    ![Attendance](screenshots/database/Attendance.png)
+![Email](screenshots/database/emailauthentication.png)    ![Marks](screenshots/database/Marks.png)
+![Papers](screenshots/database/paper.png)
